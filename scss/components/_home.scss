@@ -1,0 +1,21 @@
+@use '../globals/colors' as c;
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: c.$text;
+
+  &__header {
+    font-weight: 400;
+    font-size: 92px;
+    width: 50%;
+    text-align: center;
+  }
+  &__sub-header {
+    color: c.$secondary;
+    font-size: 24px;
+  }
+}
