@@ -1,0 +1,44 @@
+@use '../globals/colors' as c;
+@use '../globals/typography' as tg;
+@use '../globals/breakpoints' as bp;
+.about {
+  margin-inline: 2rem;
+}
+
+
+.about__article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%),  1fr));
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  &--reversed > :nth-child(1)  {
+    order: 1;
+    @include bp.md {
+      order: 0;
+    }
+  }
+
+  &__img-container {
+
+    img {
+      display: block;
+      text-align: center;
+      margin-inline: auto;
+      width: min(350px, 100%);
+    }
+  }
+
+  &__text {
+    text-align: start;
+    padding: 0 clamp(10px, 4vw, 2rem);
+  }
+  &__header {
+    font-size: tg.$fs-lg;
+    margin: .5rem 0;
+  }
+  &__sub-header {
+    font-weight: 300;
+  }
+}

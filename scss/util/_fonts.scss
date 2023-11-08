@@ -130,8 +130,19 @@
        font-style: italic;
 }
 
-$font: 'GeneralSans', sans-serif;
 
+@font-face {
+  font-family: 'Aileron';
+  src:
+      url('../../fonts/aileron_regular_macroman/Aileron-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+$font-primary: 'GeneralSans', sans-serif;
+$font-secondary: 'Aileron', sans-serif;
 
 
 

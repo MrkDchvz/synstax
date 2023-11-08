@@ -1,0 +1,26 @@
+@use '../util/fonts' as f;
+
+//  Font-size
+$fs-sm: 0.875rem; // 14px
+$fs-med: 1.125rem; // 18px
+$fs-lg: 2rem;
+$fs-xlg: 3.25rem;
+$fs-xxlg: 5rem;
+
+// Font-Family
+$ff-primary: f.$font-primary;
+$ff-secondary: f.$font-secondary;
+
+// 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+
+

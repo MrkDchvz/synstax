@@ -1,0 +1,66 @@
+@use '../globals/colors' as c;
+@use '../globals/breakpoints' as bp;
+@use '../globals/typography' as tg;
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 5rem;
+    z-index: 9999;
+    /* GlassMorphism rgba(21, 24, 23, 0.85) */
+    background: c.$navigation;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(45, 48, 47, 0.4);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    opacity: 1;
+
+    @include bp.md{
+        background-color: transparent;
+        backdrop-filter: blur(0);
+        border: none;
+        padding: 1rem 2rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+
+        @include bp.md {
+            display: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: c.$text;
+    }
+}
+
+// ==== Logo ==== 
+// Note: logo is a flex-child of desktop-nav
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__img {
+        width: 40px;
+    }
+    &__title {
+        color: c.$text;
+        font-weight: 600;
+        font-size: tg.$fs-med;
+        font-family: tg.$ff-primary;
+    }
+}
+
+
+

@@ -1,0 +1,80 @@
+@use '../globals/colors' as c;
+@use '../globals/breakpoints' as bp;
+
+$border-radius: 20px;
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 23%;
+  right: 5%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  z-index: 9999;
+  padding: .5rem .5rem;
+  background-color: c.$text;
+  border-radius: 10%;
+
+  @include bp.md {
+    display: block;
+    z-index: 9999;
+  }
+
+  &__bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: c.$background;
+    border-radius: 20px;
+    margin: 5px 0;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: c.$background;
+    transition: all 400ms ease-in-out;
+  }
+
+  &__bar,
+  &::before,
+  &::after {
+    border-radius: $border-radius;
+  }
+
+  /* Active Hamburger */
+
+  &.active {
+    background-color: transparent;
+    padding: 0 0;
+  }
+
+  &.active &__bar {
+    opacity: 0;
+  }
+
+  &.active::before,
+  &.active::after {
+    background-color: c.$text;
+  }
+
+  &.active::before {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  &.active::after {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+}
+
+
+
+
+

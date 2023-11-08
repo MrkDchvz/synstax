@@ -1,4 +1,6 @@
 @use '../globals/colors' as c;
+@use '../globals/typography' as tg;
+@use '../globals/breakpoints' as bp;
 .hero {
   position: relative;
   display: flex;
@@ -7,15 +9,26 @@
   align-items: center;
   min-height: 100vh;
   color: c.$text;
+  gap: 1.5rem;
 
   &__header {
-    font-weight: 400;
-    font-size: 92px;
-    width: 50%;
+    font-size: tg.$fs-xxlg;
+    width: 40%;
     text-align: center;
+    @include bp.lg {
+      font-size: tg.$fs-xlg;
+    }
+    @include bp.md {
+      width: 56%;
+    }
+    @include bp.sm {
+      width: 80%;
+    }
   }
   &__sub-header {
-    color: c.$secondary;
-    font-size: 24px;
+    color: c.$text;
+    font-size: tg.$fs-med;
+    font-weight: 300;
+    text-align: center;
   }
 }

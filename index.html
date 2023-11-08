@@ -9,16 +9,97 @@
 </head>
 <body>
   <main>
-    <nav class=""></nav>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <div class="logo">
+        <img class="logo__img" src="./img/synstax_logo.png" alt="our logo">
+        <p class="logo__title">SYNstax</p>
+      </div>
+      <ul class="desktop-nav__list">
+        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">Home</a></li>
+        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">About</a></li>
+        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">Projects</a></li>
+        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">Contacts</a></li>
+      </ul>
+      <button type="button" class="hamburger">
+        <div class="hamburger__bar"></div>
+    </button>
+    </nav>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list"> 
+          <li class="mobile-nav__item mobile-nav__item--home"><a href="#home-page" class="mobile-nav__link mobile-nav__link--home">Home</a></li>
+          <li class="mobile-nav__item mobile-nav__item--about"><a href="#about" class="mobile-nav__link mobile-nav__link--about">About</a></li>
+          <li class="mobile-nav__item mobile-nav__item--gallery"><a href="#gallery" class="mobile-nav__link mobile-nav__link--gallery">Gallery</a></li>
+          <li class="mobile-nav__item mobile-nav__item--contact"><a href="#contact"class="mobile-nav__link mobile-nav__link--contact">Contact</a></li>
+      </ul>
+  </nav>
+  <!-- Hero page -->
     <section class="hero">
       <h1 class="hero__header">Designing the Future of the Web</h1>
       <p class="hero__sub-header">Transforming Ideas into Web Reality</p>
-      <a  href="hero__link-button"></a>
+      <a href="#" class="hero__link-button button">Get Started</a>
+      <!-- <div id="particles-div"></div> -->
     </section>
-    <div id="particles-div"></div>
-  </main>
 
+    <!-- About Us -->
+    <section class="about">
+      <article class="about__article">
+        <div class="about__article__img-container">
+          <!-- <img src="./svg/peacock.svg" alt="Collaboration" class="about__article__img"> -->
+        </div>
+        <div class="about__article__text">
+          <p class="about__article__sub-header">Who We Are</p>
+          <h2 class="about__article__header">Your Vision, Our Design</h2>
+          <p class="about__article__description">At SYNstax, we're more than a web design agency; we're your growth partners. We're committed to turning your unique vision into an exceptional and seamlessly functional online presence, ensuring your online success.</p>
+        </div>
+      </article>
+
+      <article class="about__article about__article--reversed">
+        <div class="about__article__img-container">
+          <!-- <img src="./svg/cornerstone.svg" alt="Collaboration" class="about__article__img"> -->
+        </div>
+        <div class="about__article__text">
+          <p class="about__article__sub-header">Our Core Values</p>
+          <h2 class="about__article__header">The Cornerstones of Our Work</h2>
+          <p class="about__article__description">Our work is defined by our commitment to creative excellence, user-centric design, responsive web development, SEO best practices, and a dedication to timely delivery and competitive pricing – ensuring each project is a masterpiece of innovation, user engagement, and value for our clients.</p>
+        </div>
+      </article>
+
+      <article class="about__article">
+        <div class="about__article__img-container">
+          <!-- <img src="./svg/goat.svg" alt="Collaboration" class="about__article__img"> -->
+        </div>
+        <div class="about__article__text">
+          <p class="about__article__sub-header">Why Choose Us</p>
+          <h2 class="about__article__header">A Partner in Your Success</h2>
+          <p class="about__article__description">Your website is often the first interaction with your brand, and at SYNstax, we're dedicated to excellence. Choose us for creative expertise, user-focused design, and flawless, goal-driven websites.</p>
+        </div>
+      </article>
+    </section>
+    <!-- Projects -->
+    <!-- Contacts -->
+    <section class="contacts">
+      <div class="contacts__form">
+        <h2 class="contacts__form__header">We'd Love to Hear From You</h2>
+        <p class="contacts__form__sub-header">Welcome to the gateway for connecting with our web design team. We're eager to hear your inquiries, feedback, and collaboration ideas, so don't hesitate to reach out, whether it's about our web design services, ongoing projects, or simply to get in touch.</p>
+        <form class="form" action="post">
+          <input type="text" id="name" name="name" placeholder="Name" class="form__input " required>
+          <input type="email" id="email" name="email" placeholder="Email" class="form__input" required>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"  class="form__input"></textarea>
+        </form>
+      </div>
+    </section>
+    <!-- Map -->
+    <section class="map">
+      <!-- <iframe class="iframe__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.2640436146007!2d120.9797830845822!3d14.411936592667221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d22f4810979f%3A0xaf0dae4457b7d498!2sCavite%20State%20University%20-%20Bacoor%20Campus!5e0!3m2!1sen!2sph!4v1699167140707!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </section>
+  </main>
+  <footer class="footer"></footer>
+
+  <!-- =====Script=====-->
 <script src="./js/lib/particles.js"></script>
 <script src="./js/app.js"></script>
+<script src="./js/hamburger.js"></script>
 </body>
 </html>

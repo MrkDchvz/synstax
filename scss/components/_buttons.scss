@@ -1,0 +1,15 @@
+@use '../globals/colors' as c;
+.button {
+  text-decoration: none;
+  color: c.$text;
+  font-weight: 500;
+  border: 1px solid c.$text;
+  padding: 0.8em 2em;
+  border-radius: 50px;
+  transition: all 300ms ease;
+  
+  &:hover {
+    background-color:c.$text;
+    color: c.$background;
+  }
+}
