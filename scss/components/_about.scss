@@ -1,10 +1,6 @@
 @use '../globals/colors' as c;
 @use '../globals/typography' as tg;
 @use '../globals/breakpoints' as bp;
-.about {
-  margin-inline: 2rem;
-}
-
 
 .about__article {
   display: grid;

@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./dist/css/main.css">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
+    />
 </head>
 <body>
-  <main>
-    <!-- Desktop Navigation -->
-    <nav class="desktop-nav">
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
       <div class="logo">
         <img class="logo__img" src="./img/synstax_logo.png" alt="our logo">
         <p class="logo__title">SYNstax</p>
@@ -25,7 +29,7 @@
         <div class="hamburger__bar"></div>
     </button>
     </nav>
-    <!-- Mobile Navigation -->
+      <!-- Mobile Navigation -->
     <nav class="mobile-nav">
       <ul class="mobile-nav__list"> 
           <li class="mobile-nav__item mobile-nav__item--home"><a href="#home-page" class="mobile-nav__link mobile-nav__link--home">Home</a></li>
@@ -34,7 +38,10 @@
           <li class="mobile-nav__item mobile-nav__item--contact"><a href="#contact"class="mobile-nav__link mobile-nav__link--contact">Contact</a></li>
       </ul>
   </nav>
-  <!-- Hero page -->
+
+    <!-- ================ Main =============== -->
+  <main>
+   <!-- Hero page -->
     <section class="hero">
       <h1 class="hero__header">Designing the Future of the Web</h1>
       <p class="hero__sub-header">Transforming Ideas into Web Reality</p>
@@ -42,7 +49,7 @@
       <!-- <div id="particles-div"></div> -->
     </section>
 
-    <!-- About Us -->
+   <!-- About Us -->
     <section class="about">
       <article class="about__article">
         <div class="about__article__img-container">
@@ -62,7 +69,7 @@
         <div class="about__article__text">
           <p class="about__article__sub-header">Our Core Values</p>
           <h2 class="about__article__header">The Cornerstones of Our Work</h2>
-          <p class="about__article__description">Our work is defined by our commitment to creative excellence, user-centric design, responsive web development, SEO best practices, and a dedication to timely delivery and competitive pricing – ensuring each project is a masterpiece of innovation, user engagement, and value for our clients.</p>
+          <p class="about__article__description">Our work is defined by our commitment to creative excellence, user-centric design, and a dedication to timely delivery and competitive pricing – ensuring the best value for our clients.</p>
         </div>
       </article>
 
@@ -76,6 +83,53 @@
           <p class="about__article__description">Your website is often the first interaction with your brand, and at SYNstax, we're dedicated to excellence. Choose us for creative expertise, user-focused design, and flawless, goal-driven websites.</p>
         </div>
       </article>
+    </section>
+
+   <!-- Teams -->
+    <section class="team">
+      <h2 class="team__header">Our Team</h2>
+      <div class="team__grid">
+        <!-- Programmer Card -->
+        <div class="team__card" data-tilt>
+          <i class="ph ph-code"></i>
+          <div class="team__card__text">
+            <p class="team__card__sub-header">Programmer</p>
+            <h1 class="team__card__header">Mark Dechavez</h1>
+          </div>
+        </div>
+
+        <div class="team__card" data-tilt>
+          <i class="ph ph-code"></i>
+          <div class="team__card__text">
+            <p class="team__card__sub-header">Programmer</p>
+            <h1 class="team__card__header">Mark Dechavez</h1>
+          </div>
+        </div>
+
+        <div class="team__card" data-tilt>
+          <i class="ph ph-code"></i>
+          <div class="team__card__text">
+            <p class="team__card__sub-header">Programmer</p>
+            <h1 class="team__card__header">Mark Dechavez</h1>
+          </div>
+        </div>
+
+        <div class="team__card" data-tilt>
+          <i class="ph ph-code"></i>
+          <div class="team__card__text">
+            <p class="team__card__sub-header">Programmer</p>
+            <h1 class="team__card__header">Mark Dechavez</h1>
+          </div>
+        </div>
+
+        <div class="team__card" data-tilt>
+          <i class="ph ph-code"></i>
+          <div class="team__card__text">
+            <p class="team__card__sub-header">Programmer</p>
+            <h1 class="team__card__header">Mark Dechavez</h1>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Projects -->
     <!-- Contacts -->
@@ -98,7 +152,10 @@
   <footer class="footer"></footer>
 
   <!-- =====Script=====-->
+<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="./node_modules/tilt.js/./dest/tilt.jquery.js"></script>
 <script src="./js/lib/particles.js"></script>
+<!-- Main JS File -->
 <script src="./js/app.js"></script>
 <script src="./js/hamburger.js"></script>
 </body>
