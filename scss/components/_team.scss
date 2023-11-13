@@ -9,50 +9,153 @@
     margin-bottom: 2rem;
   }
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
-    justify-content: center;
-    gap: 1rem;
-  }
 }
 
 .team__card {
   position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  max-width: 100%;
   aspect-ratio: 1 / 1.5;
   transform-style: preserve-3d;
   border: 1px solid rgba(45, 48, 47, 0.4);
   border-radius: 4px;
-  display: flex;
-  gap: 2rem;
+  transition: all 0.8s;
+  overflow: hidden;
+  
+  & .text {
+    margin: 1rem .8rem;
+    opacity: 0;
+    transition: all 0.8s;
+  }
 
-  &::before {
-    content: "";
+
+  & .icons {
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    gap: .4rem;
+    left: 1rem;
+    top: 100%;
+    opacity: 0;
+    transition: all 0.8s;
+
+    .link {
+      text-decoration: none;
+      color: c.$text;
+    }
+
+    .ph {
+      font-size: 1.3rem;
+    }
+  }
+
+  & .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    aspect-ratio: 1 / 1.5;
-    filter: blur(2px);
-    height: inherit;
+    background-color: rgba(45, 48, 47, 0.4);
+    z-index: -1 ;
     opacity: 0;
-    background-image: url(../../img/mark.jpg);
-    object-fit: cover;
-    background-size: cover;
-    transition: all 200ms ease-in;
-  }
-  &:hover::before {
-    opacity: 1;
-    filter: blur(0px);
-  }
-
-  &__text {
-    margin-inline: min(0.2rem, 0.5rem);
+    transition: all 0.8s;
   }
 
 
+
+  &--financer {
+    position: relative;
+    background: url('../../img/formal/basti_formal.png') 50% 60% no-repeat;
+    background-size: 300px;
+
+  }
+  &--programmer {
+    background: url('../../img/formal/mark_formal.png') 50% 60% no-repeat;
+    background-size: 300px;
+    // &:hover {
+    //   background-size: 700px;
+    //   background-position: 20% 30%;
+    // }
+  }
+  &--language {
+    background: url('../../img/formal/ralex_formal.png') 50% 60% no-repeat;
+    background-size: 350px;
+    // &:hover {
+    //   background-size: 700px;
+    //   background-position: 17% 40%;
+    // }
+  }
+  &--debugger {
+    background: url('../../img/formal/rovic_formal.png') 50% 60% no-repeat;
+    background-size: 300px;
+    // &:hover {
+    //   background-size: 700px;
+    //   background-position: 15% 30%;
+    // }
+  }
+  &--designer {
+    background: url('../../img/formal/ema_formal.png') 50% 60% no-repeat;
+    background-size: 350px;
+    // &:hover {
+    //   background-size: 800px;
+    //   background-position: 25% 40%;
+    // }
+  }
 }
+
+// Carousel
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: none;
+}
+
+.swiper-slide {
+  width: min(300px, 100%);
+  aspect-ratio: 1 / 1.5;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(2px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  &-active {
+    filter: blur(0px);
+    .team__card {
+      background-size: 700px;
+      .icons {
+        opacity: 1;
+        top: 65%;
+      }
+      .text {
+        opacity: 1;
+        color: white;
+      }
+      .overlay {
+        opacity: 1;
+      }
+      &--financer {
+      background-position: 24% 30%;
+      }
+      &--language {
+        background-position: 17% 40%;
+      }
+      &--programmer {
+        background-position: 20% 30%;
+      }
+      &--debugger {
+        background-position: 17% 30%;
+      }
+      &--designer {
+        background-position: 20% 40%;
+      }
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: c.$text;
+}
+/* Class to allow touch on specific slides */
 
