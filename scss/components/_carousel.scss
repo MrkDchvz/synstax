@@ -1,3 +1,52 @@
+.swiper-button {
+  &-prev,
+  &-next {
+    top: 45%;
 
+    &:after {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+
+  &-prev {
+    border: 1px solid #111;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #111;
+    left: 30px;
+
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
+
+  &-next {
+    border: 1px solid #111;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #111;
+    right: 30px;
+
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: #fff;
+}
+
+
+.swiper-pagination-bullet {
+  width: 36px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 0;
+}
 
 

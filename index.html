@@ -1,156 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Synstax</title>
-  <link rel="icon" href="./img/synstax_logo.png" type="image/png"/>
-  <link
-  rel="stylesheet"
-  href="./node_modules/swiper/swiper-bundle.min.css"
-/>
-<link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
-    />
-    <!-- Main CSS -->
+  <link rel="icon" href="./img/synstax_logo.png" type="image/png" />
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css" />
+  <!-- Main CSS -->
   <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+
 <body>
-      <!-- Desktop Navigation -->
-      <nav class="desktop-nav">
-      <div class="logo">
-        <img class="logo__img" src="./img/synstax_logo.png" alt="our logo">
-        <p class="logo__title">SYNstax</p>
-      </div>
-      <ul class="desktop-nav__list">
-        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">Home</a></li>
-        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">About</a></li>
-        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">Projects</a></li>
-        <li class="desktop-nav__item"><a class="desktop-nav__link" href="#">Contacts</a></li>
-      </ul>
-      <button type="button" class="hamburger">
-        <div class="hamburger__bar"></div>
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <div class="logo">
+      <img class="logo__img" src="./img/synstax_logo.png" alt="our logo">
+      <p class="logo__title">SYNstax</p>
+    </div>
+    <ul class="desktop-nav__list">
+      <li class="desktop-nav__item"><a class="desktop-nav__link" href="#hero">Home</a></li>
+      <li class="desktop-nav__item"><a class="desktop-nav__link" href="#about">About</a></li>
+      <li class="desktop-nav__item"><a class="desktop-nav__link" href="#projects">Projects</a></li>
+      <li class="desktop-nav__item"><a class="desktop-nav__link" href="#contacts">Contacts</a></li>
+    </ul>
+    <button type="button" class="hamburger">
+      <div class="hamburger__bar"></div>
     </button>
-    </nav>
-      <!-- Mobile Navigation -->
-    <nav class="mobile-nav">
-      <ul class="mobile-nav__list"> 
-          <li class="mobile-nav__item mobile-nav__item--home"><a href="#home-page" class="mobile-nav__link mobile-nav__link--home">Home</a></li>
-          <li class="mobile-nav__item mobile-nav__item--about"><a href="#about" class="mobile-nav__link mobile-nav__link--about">About</a></li>
-          <li class="mobile-nav__item mobile-nav__item--gallery"><a href="#gallery" class="mobile-nav__link mobile-nav__link--gallery">Gallery</a></li>
-          <li class="mobile-nav__item mobile-nav__item--contact"><a href="#contact"class="mobile-nav__link mobile-nav__link--contact">Contact</a></li>
-      </ul>
+  </nav>
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item mobile-nav__item--home"><a href="#hero"
+          class="mobile-nav__link mobile-nav__link--home">Home</a></li>
+      <li class="mobile-nav__item mobile-nav__item--about"><a href="#about"
+          class="mobile-nav__link mobile-nav__link--about">About</a></li>
+      <li class="mobile-nav__item mobile-nav__item--gallery"><a href="#project"
+          class="mobile-nav__link mobile-nav__link--gallery">Projects</a></li>
+      <li class="mobile-nav__item mobile-nav__item--contact"><a href="#contacts"
+          class="mobile-nav__link mobile-nav__link--contact">Contact</a></li>
+    </ul>
   </nav>
 
-    <!-- ================ Main =============== -->
+  <!-- ================ Main =============== -->
   <main>
-   <!-- Hero page -->
-    <section class="hero">
+    <!-- Hero page -->
+    <section class="hero" id="hero">
       <h1 class="hero__header">Designing the Future of the Web</h1>
       <p class="hero__sub-header">Transforming Ideas into Web Reality</p>
-      <a href="#" class="hero__link-button button">Get Started</a>
-      <div id="particles-div"></div>
+      <a href="#contacts" class="hero__link-button button">Get Started</a>
+      <div id="particles-hero"></div>
     </section>
 
-   <!-- About Us -->
-    <section class="about">
-      <article class="about__article">
-        <div class="about__article__img-container">
-          <!-- <img src="./svg/peacock.svg" alt="Collaboration" class="about__article__img"> -->
+    <!-- About Us -->
+    <section class="about" id="about">
+      <article class="about__article about__article--we">
+        <div class="about__article__img-container about__article__img-container--we">
+          <img src="./svg/peacock.svg" alt="Collaboration" class="about__article__img">
         </div>
-        <div class="about__article__text">
+        <div class="about__article__text about__article__text--we">
           <p class="about__article__sub-header">Who We Are</p>
           <h2 class="about__article__header">Your Vision, Our Design</h2>
-          <p class="about__article__description">At SYNstax, we're more than a web design agency; we're your growth partners. We're committed to turning your unique vision into an exceptional and seamlessly functional online presence, ensuring your online success.</p>
+          <p class="about__article__description">At SYNstax, we're more than a web design agency; we're your growth
+            partners. We're committed to turning your unique vision into an exceptional and seamlessly functional online
+            presence, ensuring your online success.</p>
         </div>
       </article>
 
-      <article class="about__article about__article--reversed">
-        <div class="about__article__img-container">
-          <!-- <img src="./svg/cornerstone.svg" alt="Collaboration" class="about__article__img"> -->
+      <article class="about__article about__article--reversed about__article--values">
+        <div class="about__article__img-container about__article__img-container--values">
+          <img src="./svg/cornerstone.svg" alt="Collaboration" class="about__article__img">
         </div>
-        <div class="about__article__text">
+        <div class="about__article__text about__article__text--values">
           <p class="about__article__sub-header">Our Core Values</p>
           <h2 class="about__article__header">The Cornerstones of Our Work</h2>
-          <p class="about__article__description">Our work is defined by our commitment to creative excellence, user-centric design, and a dedication to timely delivery and competitive pricing – ensuring the best value for our clients.</p>
+          <p class="about__article__description">Our work is defined by our commitment to creative excellence,
+            user-centric design, and a dedication to timely delivery and competitive pricing – ensuring the best value
+            for our clients.</p>
         </div>
       </article>
 
-      <article class="about__article">
-        <div class="about__article__img-container">
-          <!-- <img src="./svg/goat.svg" alt="Collaboration" class="about__article__img"> -->
+      <article class="about__article about__article--choose">
+        <div class="about__article__img-container about__article__img-container--choose">
+          <img src="./svg/goat.svg" alt="Collaboration" class="about__article__img">
         </div>
-        <div class="about__article__text">
+        <div class="about__article__text about__article__text--choose">
           <p class="about__article__sub-header">Why Choose Us</p>
           <h2 class="about__article__header">A Partner in Your Success</h2>
-          <p class="about__article__description">Your website is often the first interaction with your brand, and at SYNstax, we're dedicated to excellence. Choose us for creative expertise, user-focused design, and flawless, goal-driven websites.</p>
+          <p class="about__article__description">Your website is often the first interaction with your brand, and at
+            SYNstax, we're dedicated to excellence. Choose us for creative expertise, user-focused design, and flawless,
+            goal-driven websites.</p>
         </div>
       </article>
     </section>
 
-   <!-- Teams -->
-    <section class="team">
+    <!-- Teams -->
+    <section class="team" id="team">
       <h2 class="team__header">Our Team</h2>
+      <p class="team__sub-header">A Collective Force of Talent and Passion</p>
       <!-- Slider main container -->
-      <div class="swiper">
+      <div class="swiper swiper--team">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><div class="team__card team__card--financer" data-tilt>
-            <div class="text">
-              <p class="sub-header">Financer</p>
-              <h1 class="header">Basti Candava</h1>
-            </div>
-            <div class="icons">
-              <a href="" class="link"><i class="ph ph-facebook-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-github-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
-
-          <div class="swiper-slide"><div class="team__card team__card--language" data-tilt>
-            <div class="text">
-              <p class="sub-header">Language</p>
-              <h1 class="header">Ralex Gamboa</h1>
-            </div>
-            <div class="icons">
-              <a href="" class="link"><i class="ph ph-facebook-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-github-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
-
-          <div class="swiper-slide"><div class="team__card team__card--programmer" data-tilt>
-            <div class="text">
-              <p class="sub-header">Programmer</p>
-              <h1 class="header">Mark Dechavez</h1>
-            </div>
-            <div class="icons">
-              <a href="" class="link"><i class="ph ph-facebook-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-github-logo"></i></a>
-              <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
-            </div>
-            <div class="overlay"></div>
-          </div>
-        </div>
+          <!-- Financer -->
           <div class="swiper-slide">
-            <div class="team__card team__card--debugger" data-tilt>
+            <div class="team__card team__card--financer" data-tilt>
               <div class="text">
-                <p class="sub-header">Debugger</p>
-                <h1 class="header">Rovic Alegre</h1>
+                <p class="sub-header">Financer</p>
+                <h1 class="header">Basti Candava</h1>
               </div>
               <div class="icons">
-                <a href="" class="link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://www.facebook.com/basti.candava.73" target="_blank" class="link"><i class="ph ph-facebook-logo"></i></a>
                 <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
                 <a href="" class="link"><i class="ph ph-github-logo"></i></a>
                 <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
@@ -158,6 +121,57 @@
               <div class="overlay"></div>
             </div>
           </div>
+          <!-- Language -->
+          <div class="swiper-slide">
+            <div class="team__card team__card--language" data-tilt>
+              <div class="text">
+                <p class="sub-header">Language</p>
+                <h1 class="header">Ralex Gamboa</h1>
+              </div>
+              <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100080787630746" target="_blank" class="link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-github-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <!-- Programmer -->
+          <div class="swiper-slide">
+            <div class="team__card team__card--programmer" data-tilt>
+              <div class="text">
+                <p class="sub-header">Programmer</p>
+                <h1 class="header">Mark Dechavez</h1>
+              </div>
+              <div class="icons">
+                <a href="https://www.facebook.com/MrkDchvz" target="_blank" class="link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-github-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+
+          <!-- Debugger -->
+          <div class="swiper-slide">
+            <div class="team__card team__card--debugger" data-tilt>
+              <div class="text">
+                <p class="sub-header">Debugger</p>
+                <h1 class="header">Rovic Alegre</h1>
+              </div>
+              <div class="icons">
+                <a href="https://www.facebook.com/Ro.Tian4" target="_blank" class="link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-github-logo"></i></a>
+                <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+
+          <!-- Designer -->
           <div class="swiper-slide">
             <div class="team__card team__card--designer" data-tilt>
               <div class="text">
@@ -165,7 +179,7 @@
                 <h1 class="header">Emmalyn Cabalfin</h1>
               </div>
               <div class="icons">
-                <a href="" class="link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://www.facebook.com/alyyyyz" target="_blank" class="link"><i class="ph ph-facebook-logo"></i></a>
                 <a href="" class="link"><i class="ph ph-twitter-logo"></i></a>
                 <a href="" class="link"><i class="ph ph-github-logo"></i></a>
                 <a href="" class="link"><i class="ph ph-linkedin-logo"></i></a>
@@ -175,7 +189,7 @@
           </div>
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination--team"></div>
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -185,26 +199,155 @@
         <!-- <div class="swiper-scrollbar"></div> -->
       </div>
 
-        <!-- Financer Card -->
-        <!-- Language -->
-        <!-- Programmer -->
-        <!-- Debugger -->
-        <!-- Designer -->
     </section>
     <!-- Projects -->
-    <section class="projects">
-      <h2>Our Projects</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, soluta!</p>
+    <section class="projects" id="projects">
+      <h2 class="projects__header">Our Projects</h2>
+      <p class="projects__sub-header">Shaping Success, One Project at a Time.</p>
+      <div class="swiper swiper--projects">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--cvsu">
+            <a class="btn-more" href="https://mrkdchvz.github.io/cvsu-website/" target="_blank" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+            <div class="swiper-content">
+              <div class="swiper-content-inner">
+                <span>University Landing Page</span>
+                <h2>Cavite State University</h2>
+                <hr>
+                <p>
+                  "Dive into excellence"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--portfolio">
+            <a class="btn-more" href="https://github.com/MrkDchvz/personal-projects" target="_blank" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+            <div class="swiper-content">
+              <div class="swiper-content-inner">
+                <span>Portfolio Website</span>
+                <h2>Personal Portfolio</h2>
+                <hr>
+                <p>
+                  "Creative, Dynamic, Impactful"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--csbh">
+            <a class="btn-more" href="https://github.com/MrkDchvz/Movie-Ticketing-System-CSBH-" target="_blank" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+            <div class="swiper-content">
+              <div class="swiper-content-inner">
+                <span>Movie Booking Website</span>
+                <h2>CSBH Movie Website</h2>
+                <hr>
+                <p>
+                  "Journey Through Frames"
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide swiper-slide--technology">
+            <a class="btn-more" href="https://polite-chebakia-95f035.netlify.app/" target="_blank" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+            <div class="swiper-content">
+              <div class="swiper-content-inner">
+                <span>Ai Tools Website</span>
+                <h2>Technology</h2>
+                <hr>
+                <p>
+                  "Tools for Tomorrow"
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide swiper-slide--base-apparel">
+            <a class="btn-more" href="https://tranquil-haupia-cbfe80.netlify.app/" target="_blank" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+            <div class="swiper-content">
+              <div class="swiper-content-inner">
+                <span>Fashion Shop</span>
+                <h2>Base Apparel</h2>
+                <hr>
+                <p>
+                  "Based styles with Base Apparel"
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide swiper-slide--social-proof">
+            <a class="btn-more" href="https://cozy-paletas-6b5e85.netlify.app/" target="_blank" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+            <div class="swiper-content">
+              <div class="swiper-content-inner">
+                <span>Socials Section</span>
+                <h2>Social Proof</h2>
+                <hr>
+                <p>
+                  "Where honesty begins"
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div id="particles-projects"></div>
     </section>
     <!-- Contacts -->
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__form">
         <h2 class="contacts__form__header">We'd Love to Hear From You</h2>
-        <p class="contacts__form__sub-header">Welcome to the gateway for connecting with our web design team. We're eager to hear your inquiries, feedback, and collaboration ideas, so don't hesitate to reach out, whether it's about our web design services, ongoing projects, or simply to get in touch.</p>
+        <p class="contacts__form__sub-header">Welcome to the gateway for connecting with our web design team. We're
+          eager to hear your inquiries, feedback, and collaboration ideas, so don't hesitate to reach out, whether it's
+          about our web design services, ongoing projects, or simply to get in touch.</p>
         <form class="form" action="post">
           <input type="text" id="name" name="name" placeholder="Name" class="form__input " required>
           <input type="email" id="email" name="email" placeholder="Email" class="form__input" required>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"  class="form__input"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+            class="form__input"></textarea>
         </form>
       </div>
     </section>
@@ -216,14 +359,21 @@
   <footer class="footer"></footer>
 
   <!-- =====Script=====-->
-<!-- <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <!-- <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="./node_modules/tilt.js/./dest/tilt.jquery.js"></script> -->
-<script defer src="./js/lib/carousel.js"></script>
-<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-<script src="./js/lib/particles.js"></script>
-<!-- Main JS File -->
-<script src="./js/app.js"></script>
-<script src="./js/hamburger.js"></script>
+<!-- Slider -->
+  <script defer src="./js/lib/teamSwiper.js"></script>
+  <script defer src="./js/lib/projectSwiper.js"></script>
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <!-- Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./js/lib/particles.js"></script>
+  <script src="./js/lib/scrollAnimation.js"></script>
+  <!-- Main JS File -->
+  <script src="./js/app.js"></script>
+  <script src="./js/hamburger.js"></script>
 
 </body>
+
 </html>
