@@ -7,9 +7,18 @@
   padding: 0.8em 2em;
   border-radius: 50px;
   display: block;
+  background-color: transparent;
+
+  &--submit {
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+  }
   
   &:hover {
     background-color:c.$text;
     color: c.$background;
   }
 }
+
+
