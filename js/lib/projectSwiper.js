@@ -1,3 +1,4 @@
+// core version + navigation, pagination modules:
 
 // init Swiper:
 const swiper2 = new Swiper(".swiper--projects", {

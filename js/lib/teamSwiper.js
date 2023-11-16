@@ -1,4 +1,6 @@
 
+
+
 // init Swiper:
 const swiper1 = new Swiper('.swiper--team', {
   effect: "coverflow",
