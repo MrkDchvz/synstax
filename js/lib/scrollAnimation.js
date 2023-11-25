@@ -66,8 +66,8 @@ const team = gsap.timeline({
 });
 
 team.from(".team__header", {opacity: 0, y: 50, duration: .4})
-    .from(".team__sub-header", {opacity: 0, y:50, duration: .4})
-    .from(".swiper--team", {opacity: 0, filter: 'blur(10px)', duration: .4});
+    .from(".team__sub-header", {opacity: 0, y:50, duration: .3})
+    .from(".swiper--team", {opacity: 0, filter: 'blur(10px)', duration: .3});
 
 
 // Projects
@@ -81,8 +81,8 @@ team.from(".team__header", {opacity: 0, y: 50, duration: .4})
 
   projects.from(".projects__header", {opacity: 0, y: 50, duration: .4})
       .from(".projects__sub-header", {opacity: 0, y:50, duration: .4})
-      .from("#particles-projects", {opacity:0, duration: .4})
-      .from(".swiper--projects", {opacity: 0, filter: 'blur(8px)', duration: .4});
+      .from("#particles-projects", {opacity:0, duration: .3})
+      .from(".swiper--projects", {opacity: 0, filter: 'blur(8px)', duration: .3});
 
 // Contacts
 const contacts = gsap.timeline({
